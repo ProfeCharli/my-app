@@ -1,0 +1,77 @@
+/* Navlat.css */
+
+.nav-container {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+/* Botón */
+.menu-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  font-size: 24px;
+  background: #1e1e2f;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* Menú lateral */
+.sidebar {
+  background: #1e1e2f;
+  color: white;
+  height: 100%;
+  width: 250px;
+  padding-top: 60px;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+/* Cerrado */
+.sidebar.collapsed {
+  width: 70px;
+}
+
+/* Logo */
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+/* Lista vertical */
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Items */
+.menu-list li {
+  width: 100%;
+}
+
+/* Links React Router */
+.menu-list li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  border-left: 4px solid transparent;
+}
+
+.menu-list li a:hover {
+  background: #2c2c44;
+  border-left: 4px solid #00bcd4;
+  padding-left: 25px;
+}
